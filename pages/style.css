@@ -196,7 +196,7 @@ html {
     .referencias li {
         margin-top: 20px;
         margin-left: 20px;
-        list-style: none;
+        list-style: disc;
     }
 
     .referencias li:first-child {
