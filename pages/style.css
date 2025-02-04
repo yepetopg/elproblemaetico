@@ -1,0 +1,262 @@
+:root {
+    --azul-oscuro: #091d36;
+    --azul-medio: #214288;
+    --azul-claro: #4377c5;
+    --azul-so-claro: #c2d2e9;
+    --blanco: #f1f1f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    background-color: var(--azul-claro);
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+/*---MAIN---*/
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    color: var(--blanco);
+    text-align: center;
+    background: linear-gradient(#4e76cc, var(--azul-oscuro));
+    height: 45vh;
+    width: 100vw;
+    border-radius: 0px 0px 25px 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main li {
+    list-style: circle;
+}
+
+.main li:first-child{
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main h1, .main p {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.main_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+}
+
+/*---NAVBAR---*/
+
+.navbar {
+    background-color: var(--blanco);
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    border-radius: 10px 10px 0 0;
+    user-select: none;
+    z-index: 999;
+}
+
+.ul_navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.li_navbar {
+    list-style: none;
+}
+
+.a_navbar {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    padding-top: 25px;
+}
+.navbar_img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 24px;
+    background-color: var(--blanco);
+    padding: 5px;
+    border-radius: 50%;
+    transition: bottom 1s, background-color 1s;
+}
+
+.navbar_circle {
+    position: absolute;
+    bottom: 20px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: var(--azul-claro);
+}
+
+/*---CONSEPTOS---*/
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    color: var(--blanco);
+    grid-auto-rows: 150px;
+    gap: 90px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    place-content: center;
+}
+
+.grid p {
+    font-size: 14px;
+}
+
+.grid h2 {
+    margin-bottom: 5px;
+}
+
+.grid {
+    background-color: var(--azul-medio);
+    border-radius: 8px;
+    height: 220px;
+    display: flex;
+    text-align: center;
+    filter: blur(0px);
+    scale: 1;
+    padding-bottom: 5px;
+    transition: filter 1s, scale;
+    margin-bottom: 50px;
+}
+
+.grid_img {
+    border-radius: 8px 0px 0px 8px;
+    width: 40%;
+    height: 220px;
+}
+
+.grid:last-child {
+    height: 240px;
+}
+
+.grid_img1 {
+    border-radius: 8px 0px 0px 8px;
+    width: 40%;
+    height: 240px;
+}
+.grid_content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*---REFERENCIAS---*/
+
+    .referencias{
+        color: var(--blanco);
+        background-color: #183166;
+        margin: 10px;
+        margin-right: 10px;
+        border-radius: 8px;
+    }
+
+    .referencias a {
+        color: var(--blanco);
+        font-weight: bold;
+    }
+
+    .referencias li {
+        margin-top: 20px;
+        margin-left: 20px;
+        list-style: disc;
+    }
+
+    .referencias h2 {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .referencias li:first-child {
+        padding-top: 15px;
+    }
+
+    .referencias li:last-child {
+        padding-bottom: 15px;
+    }
+    .cita1 {
+        position: absolute;
+        color: var(--blanco);
+        bottom: 110px;
+        left: -8px;
+        width: 150px;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .cita2 {
+        position: absolute;
+        bottom: 110px;
+        color: var(--blanco);
+        left: -8px;
+        width: 150px;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .cita3 {
+        position: absolute;
+        bottom: 120px;
+        color: var(--blanco);
+        left: -8px;
+        width: 150px;
+        font-size: 12px;
+        text-decoration: none;
+    }
+/*---PUEBA---*/
+.div{
+    height: 25vh;
+}
+
+/*---HOVERS---*/
+.navbar_img:hover{
+    bottom: 32px;
+    background-color: var(--azul-so-claro);
+}
+
+.grid:hover {
+    scale: 1.05;
+}
+
+.grid_container:hover >.grid:not(:hover){
+    filter: blur(2px);
+}
+
+/*---MediaQ---*/
+
+@media screen and (min-width: 720px) {
+    .grid:last-child {
+        grid-column-end: 3;
+        grid-column-start: 1;
+        margin: auto;
+    }
+}
