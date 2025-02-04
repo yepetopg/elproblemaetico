@@ -143,7 +143,6 @@ html {
     scale: 1;
     padding-bottom: 5px;
     transition: filter 1s, scale;
-    margin-bottom: 50px;
 }
 
 .grid_img {
