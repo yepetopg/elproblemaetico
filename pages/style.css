@@ -136,7 +136,7 @@ html {
 .grid {
     background-color: var(--azul-medio);
     border-radius: 8px;
-    height: 220px;
+    height: 230px;
     display: flex;
     text-align: center;
     filter: blur(0px);
@@ -149,7 +149,7 @@ html {
 .grid_img {
     border-radius: 8px 0px 0px 8px;
     width: 40%;
-    height: 220px;
+    height: 230px;
 }
 
 .grid_content {
